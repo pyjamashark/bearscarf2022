@@ -12,7 +12,7 @@ forever(function () {
     endhue = starthue + 42
     while (hue < endhue) {
         strip.setPixelColor(0, light.hsv(hue, 255, 255))
-        strip.move(LightMove.Rotate, randint(0, 10))
+        strip.move(LightMove.Rotate, 1)
         pause(150)
         hue += 2
     }
